@@ -79,7 +79,7 @@ public class PostService {
 
         HttpEntity<Collection<Long>> request = new HttpEntity<>(postIds);
         ResponseEntity<Like[]> likeResponse = restTemplate.postForEntity(likeUrl + "/likes-with-post", request, Like[].class);
-        ResponseEntity<Share[]> shareResponse = restTemplate.postForEntity(likeUrl + "/likes-with-post", request, Share[].class);
+        ResponseEntity<Share[]> shareResponse = restTemplate.postForEntity(shareUrl + "/likes-with-post", request, Share[].class);
 
         if (likeResponse.getStatusCode().is2xxSuccessful() && shareResponse.getStatusCode().is2xxSuccessful()) {
             Collection<Like> likes = Arrays.asList(Objects.requireNonNull(likeResponse.getBody()));
