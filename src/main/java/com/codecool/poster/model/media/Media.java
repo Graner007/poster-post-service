@@ -1,4 +1,4 @@
-package com.codecool.poster.model;
+package com.codecool.poster.model.media;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

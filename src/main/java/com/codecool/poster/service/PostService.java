@@ -1,7 +1,7 @@
 package com.codecool.poster.service;
 
 import com.codecool.poster.model.Like;
-import com.codecool.poster.model.Media;
+import com.codecool.poster.model.media.Media;
 import com.codecool.poster.model.Share;
 import com.codecool.poster.model.post.Post;
 import com.codecool.poster.model.post.SendPost;
