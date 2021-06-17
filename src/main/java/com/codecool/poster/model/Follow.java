@@ -5,15 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Media {
+public class Follow {
 
-    private long postId;
+    private long followerPersonId;
 
-    private String mediaRoute;
+    private long followedPersonId;
 
-    private MediaTypeEnum mediaType;
+    private LocalDateTime followDate;
 }
