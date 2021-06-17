@@ -4,6 +4,7 @@ eureka.client.service-url.default-zone=http://localhost:8761/eureka
 media.service.url=http://media
 like.service.url=http://like
 share.service.url=http://share
+follow.service.url=http://follow
 
 spring.datasource.url=
 spring.datasource.username=
